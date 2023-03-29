@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./build/img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <link href="/build/css/app.css" rel="stylesheet">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+</head>
+<body>
+  <main class="contenedor">
+    <section class="resultado">
+      <h3 class="resultado__titulo">Your Result</h2>
+      <p class="resultado__valor">0</p>
+      <p class="resultado__maximo">of 100</p>
+      <h2 class="resultado__calificacion">Great</h2>
+      <p class="resultado__texto">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+
+    <section class="sumario">
+      <h3 class="sumario__titulo">Summary</h2>
+
+      <div class="apartado apartado--reaccion">
+        <div class="sector">
+          <img class="sector__icono" src="/build/img/icon-reaction.svg" width="20" height="20" alt="Imagen">
+          <p class="sector__texto sector__texto--reaccion">Reaction</p>
+        </div>
+        <p class="apartado__valor" data-seccion="Reaction"><span>0</span> / 100</p>
+      </div>
+
+      <div class="apartado apartado--memoria">
+        <div class="sector">
+          <img class="sector__icono" src="/build/img/icon-memory.svg" width="20" height="20" alt="Imagen">
+          <p class="sector__texto sector__texto--memoria">Memory</p>
+        </div>
+        <p class="apartado__valor" data-seccion="Memory"><span>0</span> / 100</p>
+      </div>
+
+      <div class="apartado apartado--verbal">
+        <div class="sector">
+          <img class="sector__icono" src="/build/img/icon-verbal.svg" width="20" height="20" alt="Imagen">
+          <p class="sector__texto sector__texto--verbal">Verbal</p>
+        </div>
+        <p class="apartado__valor" data-seccion="Verbal"><span>0</span> / 100</p>
+      </div>
+
+      <div class="apartado apartado--visual">
+        <div class="sector">
+          <img class="sector__icono" src="/build/img/icon-visual.svg" width="20" height="20" alt="Imagen">
+          <p class="sector__texto sector__texto--visual">Visual</p>
+        </div>
+        <p class="apartado__valor" data-seccion="Visual"><span>0</span> / 100</p>
+      </div>
+
+      <a class="sumario__enlace" href="#">Continue</a>   
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p class="footer__texto">Challenge by</p>
+      <a class="footer__enlace" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    </div>
+    <div>
+      <p class="footer__texto">Coded by</p>
+      <a class="footer__enlace" href="https://github.com/ale-08-12">Alexander</a>
+    </div>
+  </footer>
+
+  <script src="build/js/main.js"></script>
+</body>
+</html>
